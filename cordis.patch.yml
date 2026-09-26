@@ -1,0 +1,13 @@
+# dsh-skill-role-bridge 的 profile patch 片段。
+#
+# 把 skill 目录与工作区指令 AGENTS.md 从 user role 搬到 system prompt。
+#
+# 用法：把下面的 insert 块并入 $DSH_HOME/profiles/<profile>/cordis.patch.yml，
+# 然后重启一次 dsh（热重载对首次加载的插件无效 —— 长驻进程的 ESM 模块缓存
+# 会让新插件拿到旧代码）。
+#
+# 完整回滚：删掉该 insert 块，并执行
+#   dsh plugin --profile web remove dsh-skill-role-bridge
+- insert:
+    - id: skill-role-bridge
+      name: dsh-skill-role-bridge

@@ -1,0 +1,40 @@
+{
+  "name": "dsh-skill-role-bridge",
+  "version": "0.1.0",
+  "description": "把 skill 目录与工作区指令 AGENTS.md 从 user role 搬到 system prompt 的 DSH 插件",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "test"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsiying437-coder/dsh-skill-role-bridge.git"
+  },
+  "homepage": "https://github.com/lsiying437-coder/dsh-skill-role-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/lsiying437-coder/dsh-skill-role-bridge/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "system-prompt",
+    "skill",
+    "agent-instructions",
+    "cordis"
+  ],
+  "author": "lsiying437-coder"
+}
